@@ -103,22 +103,13 @@ section.mainsection {
       <div class="leftpanels">
       <header class="banner">
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="header">{{ site.description | default: site.github.project_tagline }} by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</p>
 
+        <!--
         <ul>
           <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
         </ul>
-
-        {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
-          and tested with <a class="header name" href="https://byexamples.github.io">byexample</a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
+        -->
       </header>
       </div>
 
